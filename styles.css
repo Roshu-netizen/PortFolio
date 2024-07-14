@@ -69,7 +69,6 @@ li {
         background-position-x: 500%;
     }
 }
-
 #splash {
     position: fixed;
     top: 0;
@@ -79,13 +78,13 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000; 
-    z-index: 9999; 
-}
-
-#content {
+    background-color: #000; /* Adjust background color as needed */
+    z-index: 9999; /* Ensure it's on top */
+  }
+  
+  #content {
     display: none;
-}
+  }
 /* Container styles */
 .img-size {
   width: 320px;

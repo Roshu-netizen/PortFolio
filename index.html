@@ -22,8 +22,10 @@
 <body>
     <!-- Loader -->
     <div id="splash">
-        <div class="p-1">Welcome To My PortFolio</div>
-    </div>
+        <p class="p-1">Welcome to My Website</p>
+      </div>
+      <div id="content">
+        </div>
 
 
     <header>
@@ -58,7 +60,7 @@
                 </div>
             </div>
         </nav>
-        
+
     </header>
 
     <main class="container mt-5">
@@ -87,7 +89,8 @@
         <div class="table center container">
             <div class="monitor-wrapper center">
                 <div class="monitor center">
-                    <p class="respon">I am a Front-End Developer using these languages: HTML, CSS, Bootstrap 5, Tailwind CSS & Javascript</p>
+                    <p class="respon">I am a Front-End Developer using these languages: HTML, CSS, Bootstrap 5, Tailwind
+                        CSS & Javascript</p>
                 </div>
             </div>
         </div>
@@ -112,10 +115,11 @@
             const splash = document.getElementById('splash');
             const content = document.getElementById('content');
 
+            // Optional delay for animation effect
             setTimeout(() => {
                 splash.style.display = 'none';
                 content.style.display = 'block';
-            }, 3000);
+            }, 3000); 
         });
 
         window.addEventListener('load', function () {
@@ -131,11 +135,11 @@
             }
         });
         const hamburger = document.querySelector('.hamburger');
-const mobileMenu = document.querySelector('.mobile-menu');
+        const mobileMenu = document.querySelector('.mobile-menu');
 
-hamburger.addEventListener('click', () => {
-    document.body.classList.toggle('menu-open');
-});
+        hamburger.addEventListener('click', () => {
+            document.body.classList.toggle('menu-open');
+        });
 
 
 
