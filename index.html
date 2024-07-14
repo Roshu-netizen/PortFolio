@@ -21,12 +21,11 @@
 
 <body>
     <!-- Loader -->
-    <div id="splash">
-        <p class="p-1">Welcome to My Website</p>
-      </div>
-      <div id="content">
-        </div>
-
+    <div id="loader">
+        <div class="p-1">Welcome To My PortFolio</div>
+    </div>
+    <div id="content">
+    </div>
 
     <header>
         <nav>
@@ -111,16 +110,12 @@
 
 
     <script>
-        window.addEventListener('load', () => {
-            const splash = document.getElementById('splash');
+        window.addEventListener('load', function () {
+            const loader = document.getElementById('loader');
             const content = document.getElementById('content');
-
-            // Optional delay for animation effect
-            setTimeout(() => {
-                splash.style.display = 'none';
-                content.style.display = 'block';
-            }, 3000); 
-        });
+            loader.style.display = 'none';
+            content.style.display = 'block';
+        }), 3000;
 
         window.addEventListener('load', function () {
             const imageContainer = document.querySelector('.image-container');
